@@ -21,7 +21,7 @@ public class Program {
 			stmt = conn.createStatement();						// instanciação do objeto com o comando SQL
 			rsts = stmt.executeQuery("SELECT * FROM pessoa");	// instanciação do objeto com o resultado do comando SQL
 			
-			System.out.println("ID, NOME, CPF, NASCIMENTO");
+			System.out.println("ID, NOME, CPF, NASCIMENTO, TELEFONE, EMAIL");
 			while(rsts.next()) {
 				System.out.println(
 					rsts.getInt("id_pessoa") 
@@ -30,7 +30,11 @@ public class Program {
 					+ ", "
 					+ rsts.getString("cpf")
 					+ ", "
-					+ sdf.format(rsts.getDate("nascimento"))); // data do sql para SimpleDateFormat(dd/MM/yyyy)
+					+ sdf.format(rsts.getDate("nascimento")) // data do sql para SimpleDateFormat(dd/MM/yyyy)
+					+ ", "
+					+ rsts.getString("telefone")
+					+ ", "
+					+ rsts.getString("email"));
 			}
 			
 		}
