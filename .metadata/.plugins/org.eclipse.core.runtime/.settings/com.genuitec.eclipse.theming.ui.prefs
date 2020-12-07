@@ -1,11 +1,13 @@
 applyBackground=false
 approved.defs.file.last.changed.time=1599254320000
-codemix.dont.show.upsell.until=1589910754847
+codemix.dont.show.upsell.until=1609374804947
 configurationInstallLocation=/snap/eclipse/48/
 eclipse.preferences.version=1
+elearning.dont.show.until=1608251670995
 iconcolormode=primary
-last.download.attempt.time=1606786676875
-lastConfiguration=1606786623991
+includeThemingInOomph=false
+last.download.attempt.time=1607215235832
+lastConfiguration=1607215157419
 newinstall=false
 showWelcomeDialog=false
 workbench.theme=Dark Gray

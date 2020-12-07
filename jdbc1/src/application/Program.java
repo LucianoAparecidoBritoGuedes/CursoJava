@@ -19,27 +19,28 @@ public class Program {
 		try {
 			conn = DB.getConnection(); 							// instanciação do objeto de conexão
 			stmt = conn.createStatement();						// instanciação do objeto com o comando SQL
-			rsts = stmt.executeQuery("SELECT * FROM pessoa");	// instanciação do objeto com o resultado do comando SQL
-			
-			System.out.println("ID, NOME, CPF, NASCIMENTO, TELEFONE, EMAIL");
+			rsts = stmt.executeQuery("select * from pessoa p join filmes f on p.id_filmes = f.id_filmes");
+
+			System.out.println("ID, NOME, NASCIMENTO, FILME, DURAÇÃO, CLASSIFICAÇÃO");
 			while(rsts.next()) {
 				System.out.println(
-					rsts.getInt("id_pessoa") 
+					rsts.getInt("p.id_pessoa") 
 					+ ", " 
-					+ rsts.getString("nome")
+					+ rsts.getString("p.nome")
 					+ ", "
-					+ rsts.getString("cpf")
+					+ sdf.format(rsts.getDate("p.nascimento")) // data do sql para SimpleDateFormat(dd/MM/yyyy)
 					+ ", "
-					+ sdf.format(rsts.getDate("nascimento")) // data do sql para SimpleDateFormat(dd/MM/yyyy)
+					+ rsts.getString("f.nome")
 					+ ", "
-					+ rsts.getString("telefone")
+					+ rsts.getTime("f.duracao")
 					+ ", "
-					+ rsts.getString("email"));
+					+ rsts.getString("f.classificacao"));
 			}
 			
 		}
 		catch (SQLException e) {
 				e.getMessage();
+				e.printStackTrace();
 			}
 		finally {
 			DB.closeResultSet(rsts);	//chamando método para fechar o ResultSet
