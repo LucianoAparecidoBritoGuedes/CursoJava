@@ -1,0 +1,9 @@
+package db;
+
+public class Querys {
+
+	public List query() {
+		
+	}
+	
+}

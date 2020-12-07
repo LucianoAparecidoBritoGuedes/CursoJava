@@ -1,0 +1,8 @@
+INDEX VERSION 1.131+/home/luciano/Projects/CursoJava/.metadata/.plugins/org.eclipse.jdt.core
+80333415.index
+3987369810.index
+646308851.index
+3317076261.index
+1942944497.index
+3559121407.index
+2595053508.index

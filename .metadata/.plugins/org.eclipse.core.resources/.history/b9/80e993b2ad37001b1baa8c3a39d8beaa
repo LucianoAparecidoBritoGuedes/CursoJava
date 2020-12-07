@@ -1,0 +1,9 @@
+package db;
+
+public static class Querys {
+
+	public static query() {
+		
+	}
+	
+}
