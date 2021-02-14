@@ -6,6 +6,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/home/luciano/Projects/JogoAnimais"/>
 			<item value="/home/luciano/eclipse-workspace/couseJava-NelioAlves-Composicao"/>
 			<item value="/home/luciano/Projects/JavaSE/Scanner"/>
 		</list>
@@ -16,5 +17,7 @@
 		<item key="DIALOG_WIDTH" value="525"/>
 		<item key="DIALOG_HEIGHT" value="595"/>
 		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|10.0|0|GTK|1|"/>
+	</section>
+	<section name="NewWizardAction">
 	</section>
 </section>
