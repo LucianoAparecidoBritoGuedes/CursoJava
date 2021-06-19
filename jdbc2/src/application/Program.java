@@ -4,9 +4,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.text.SimpleDateFormat;
-
-import com.mysql.jdbc.Statement;
 
 import db.DB;
 
@@ -21,18 +20,16 @@ public class Program {
 			conn = DB.getConnection();
 			stmt = conn.prepareStatement(
 					"INSERT INTO pessoa "
-					+ "(cpf, rg, nome, nascimento, sexo, telefone, email, id_filmes) "
+					+ "(Nome, Email, BirthDate, BaseSalary, DepartmentId) "
 					+ "VALUES "
-					+ "(?, ?, ?, ?, ?, ?, ?, ?)",
+					+ "(?, ?, ?, ?, ?)",
 					Statement.RETURN_GENERATED_KEYS);
 			
-			stmt.setString(1, "62154468537");
-			stmt.setString(2, "698531");
-			stmt.setString(3, "Jessica Felix");
-			stmt.setDate(4, new java.sql.Date(sdf.parse("04/04/1992").getTime()));
-			stmt.setString(5, "F");
-			stmt.setString(6, "61985647891");
-			stmt.setString(7, "jessicafelix@gmail.com");
+			stmt.setString(1, "Luciano Brito");
+			stmt.setString(2, "lucianobrito.dev@gmail.com");
+			stmt.setDate(3, new java.sql.Date(sdf.parse("04/04/1992").getTime()));
+			stmt.setDouble(4, 2000.00);
+			stmt.setInt(5, 1);
 			stmt.setInt(8, 1);
 			
 			int rowsAffected = stmt.executeUpdate();

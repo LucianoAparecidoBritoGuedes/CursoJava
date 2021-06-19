@@ -16,11 +16,11 @@ public class Program {
 			conn = DB.getConnection();
 			
 			stmt = conn.prepareStatement(
-					"UPDATE pessoa "
-					+ "SET nome = ? "
-					+ "WHERE id_pessoa = ?");
-			stmt.setString(1, "Marcelo Ramos");
-			stmt.setInt(2, 14);
+					"UPDATE department "
+					+ "SET name = ? "
+					+ "WHERE id = ?");
+			stmt.setString(1, "Vehicle");
+			stmt.setInt(2, 3);
 			
 			int rowsAffected = stmt.executeUpdate();
 			
