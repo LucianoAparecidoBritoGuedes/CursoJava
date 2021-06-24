@@ -17,9 +17,11 @@ public class Program {
 			conn = DB.getConnection();
 			
 			stmt = conn.prepareStatement(
-					"DELETE FROM filmes "
-					+ "WHERE id_filmes = ?");
-			stmt.setInt(1, 1);
+					"UPDATE seller "
+					+ "SET BaseSalary = BaseSalary + ? "
+					+ "WHERE (DepartmentId = ?)");
+			stmt.setDouble(1, 200.0);
+			stmt.setInt(2, 1);
 			
 			int rowsAffected = stmt.executeUpdate();
 			
