@@ -27,3 +27,5 @@ hs_err_pid*
 /.metadata/*
 .metadata/*
 .metadata/.plugins/org.eclipse.core.resources/.projects/jdbc2/.indexes/e4/50/history.index
+jdbc-dao-demo/.classpath
+jdbc5/.attach_pid18260
