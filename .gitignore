@@ -29,3 +29,4 @@ hs_err_pid*
 .metadata/.plugins/org.eclipse.core.resources/.projects/jdbc2/.indexes/e4/50/history.index
 jdbc-dao-demo/.classpath
 jdbc5/.attach_pid18260
+.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
