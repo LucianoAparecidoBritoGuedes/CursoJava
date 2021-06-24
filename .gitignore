@@ -21,12 +21,27 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-/bin/
-*/.metadata/*
-/.metadata/
-/.metadata/*
+/bin/*
 .metadata/*
-.metadata/.plugins/org.eclipse.core.resources/.projects/jdbc2/.indexes/e4/50/history.index
+.metadata/.*
+jdbc1/.attach*
+jdbc1/.classpath
+jdbc1/.project
+jdbc2/.attach*
+jdbc2/.classpath
+jdbc2/.project
+jdbc3/.attach*
+jdbc3/.classpath
+jdbc3/.project
+jdbc4/.attach*
+jdbc4/.classpath
+jdbc4/.project
+jdbc5/.attach*
+jdbc5/.classpath
+jdbc5/.project
+jdbc6/.attach*
+jdbc6/.classpath
+jdbc6/.project
+jdbc-dao-demo/.attach*
 jdbc-dao-demo/.classpath
-jdbc5/.attach_pid18260
-.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
+jdbc-dao-demo/.project
